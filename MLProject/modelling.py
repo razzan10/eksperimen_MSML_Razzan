@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 
-dagshub.init(repo_owner='razzan10', repo_name='MSML-Loan-Prediction', mlflow=True)
+# dagshub.init(repo_owner='razzan10', repo_name='MSML-Loan-Prediction', mlflow=True)
 
 tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "https://dagshub.com/razzan10/MSML-Loan-Prediction.mlflow")
 mlflow.set_tracking_uri(tracking_uri)
