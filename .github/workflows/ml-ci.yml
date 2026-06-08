@@ -28,4 +28,4 @@ jobs:
           MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
         run: |
           # Perintah ini akan mengeksekusi file MLProject
-          mlflow run ./MLProject --no-conda
+          mlflow run ./MLProject --env-manager=local
